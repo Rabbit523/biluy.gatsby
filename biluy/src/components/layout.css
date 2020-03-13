@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #ff4d5b;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fat-border {
+  border-bottom: 4px #fff solid;
+}
+
+.placeholder-fix::placeholder {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.placeholder-fix {
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 14rem;
+}
+
+@media (min-width: 640px) {
+  .placeholder-width-fix {
+    max-width: 100%;
+    font-size: 24px;
+  }
+}
+
+.low-opacity {
+  opacity: .05;
+}
+
+.scale {
+  font-size: 5.5vw;
+}
+
+.increase-size {
+  transform: scale(1.5);
+}
+
+@media (min-width: 640px) {
+  .increase-size {
+    transform: scale(3);
+  }
+}
+
+.image-sizing {
+  min-width: 220px;
+  width: 220px;
+}
+
+@media (min-width: 640px) {
+  .image-sizing {
+    min-width: 350px;
+    width: 350px;
+  }
+}
+
+.rounded-xl {
+  border-radius: 25px;
+}
+
+.white-div {
+  background-color: #F6F6F6;
+}
+
+.max-w-xxs {
+  max-width: 14rem;
+  text-transform: capitalize;
+}
+
+.location-type {
+  color: #28c8f0;
+}
+
+.icon {
+  position: absolute;
+}
+
+.container {
+  position: relative;
+}
+
+.orbit-system {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.group-spin {
+  width:200px;
+  height:200px;
+  position:absolute;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-name:orbit;
+  animation-duration:5s;
+}
+
+.group-spin span {
+  font-size: 45px;
+}
+
+.origin-dot {
+  position: absolute;
+  top: 90px;
+  left: 60px;
+}
+
+.spin1{
+  position:absolute;
+  top:0;
+  left:0;
+  width:50px;
+  height:50px;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-name:orbit1;
+  animation-duration:5s;
+}
+
+.spin2{
+  position:absolute;
+  top:0;
+  left:150px;
+  width:50px;
+  height:50px;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-name:orbit1;
+  animation-duration:5s;
+}
+
+.spin3{
+  position:absolute;
+  top:150px;
+  left:150px;
+  width:50px;
+  height:50px;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-name:orbit2;
+  animation-duration:5s;
+}
+
+.spin4{
+  position:absolute;
+  top:150px;
+  left:0;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-name:orbit1;
+  animation-duration:5s;
+}
+
+@keyframes orbit { 
+  from { transform:rotate(0deg) } 
+  to { transform:rotate(360deg) } 
+}
+
+@keyframes orbit1 { 
+  from { transform:rotate(360deg) } 
+  to { transform:rotate(0deg) } 
+}
+
+@keyframes orbit2 { 
+  from { transform:rotate(360deg) } 
+  to { transform:rotate(0deg) } 
+}
+
+.position-right {
+  right: 0;
+}
+
+@media (min-width: 320px) {
+  .py-8 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .text-lg {
+    font-size: 1rem;
+  }
+  .my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .p-8 {
+    padding: 1rem;
+  }
+
+  .p-5 {
+    padding: 1rem;
+  }
+  .m-5 {
+    margin: 1rem;
+  }
+  .pt-20 {
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 360px) {
+  .py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .text-lg {
+    font-size: 1.125rem;
+  }
+  .my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .p-8 {
+    padding: 1.125rem;
+  }
+  .p-5 {
+    padding: 1.25rem;
+  }
+  .m-5 {
+    margin: 1.25rem;
+  }
+  .pt-20 {
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 414px) {
+  .p-8 {
+    padding: 1.5rem;
+  }
+  .my-8 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
