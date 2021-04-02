@@ -18,7 +18,7 @@
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "^17.0.2",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "typed.js": "^2.0.10"
